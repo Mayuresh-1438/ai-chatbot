@@ -7,6 +7,13 @@ let imageinput=document.querySelector("#image input")
 
 const Api_Url="https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBmyvCvvVjHG2QIAPD9vhTXUTshiHj4KcE"
 
+window.addEventListener("DOMContentLoaded", ()=>{
+    const isMobile = /Android | iPhone | iPad | iPod/i.test(navigator.userAgent);
+    if (isMobile && window.innerWidth < 768){
+        alert("For better experience, please open this site in desktop mode");
+    }
+});
+
 let user={
     message:null,
     file:{
