@@ -220,9 +220,7 @@ window.addEventListener("DOMContentLoaded", () => {
         voiceIcon.alt = "Resume";
     }
     else if (speechSynthesis.paused){
-        speechSynthesis.cancel();
-        speakText(currentText);
-        isPaused = false;
+        speechSynthesis.resume();
         voiceIcon.src="pause.svg";
         voiceIcon.alt="Pause";
     }
