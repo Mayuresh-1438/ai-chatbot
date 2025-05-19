@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
         alert("For better experience, please open this site in desktop mode");
     }
 
-     document.getElementById("image").addEventListener("ckick", () => {
+     document.getElementById("image").addEventListener("click", () => {
         document.getElementById("imageInput").click();
     });
 
