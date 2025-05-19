@@ -12,20 +12,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
     if (isMobile && window.innerWidth < 768){
         alert("For better experience, please open this site in desktop mode");
     }
-
-     document.getElementById("image").addEventListener("click", () => {
-        document.getElementById("imageInput").click();
-    });
-
-    document.getElementById("imageInput").addEventListener("change", (e) => {
-        const file = e.target.files[0];
-        if(file && file.type.startswith("image/*")){
-            handleImageUpload(file);
-        }
-        else{
-            alert("Please select a valid image.");
-        }
-    });
 });
 
 let user={
