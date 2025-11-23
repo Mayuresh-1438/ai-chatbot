@@ -5,7 +5,7 @@ let imagebtn=document.querySelector("#image")
 let image=document.querySelector("#image img")
 let imageinput=document.querySelector("#image input")
 
-const Api_Url="https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBmyvCvvVjHG2QIAPD9vhTXUTshiHj4KcE"
+const Api_Url="https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBSQ9boph6nVhl4syG5MaYAiz1y8GpO3GI"
 
 window.addEventListener("DOMContentLoaded", ()=>{
     const isMobile = /Android | iPhone | iPad | iPod/i.test(navigator.userAgent);
